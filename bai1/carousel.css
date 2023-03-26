@@ -1,0 +1,57 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper {
+    display: flex;
+    overflow: hidden;
+    width: calc((186px + 16px) * 5);
+}
+
+.gallery {
+    padding: 0;
+    transition: all 1s ease-in-out;
+    display: grid;
+    grid-template-columns: repeat(12, 186px);
+    grid-template-rows: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 0;
+    overflow-x: scroll;
+    height: 160px;
+    scroll-snap-type: both mandatory;
+    scroll-padding: 16px;
+}
+
+.active {
+    scroll-snap-type: unset;
+}
+
+li {
+    scroll-snap-align: center;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 0;
+}
+
+li div {
+    font-size: 12px;
+    height: 100%;
+    color: white;
+}
+
+.map {
+    display: flex;
+    width: calc((186px + 1rem) * 5);
+    place-content: center;
+}
+.map div {
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    margin: 20px 8px;
+}
+
+.map div.active {
+    background-color: red;
+}

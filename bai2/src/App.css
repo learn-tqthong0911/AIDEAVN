@@ -1,0 +1,28 @@
+.input {
+  width: fit-content;
+  position: relative;
+  margin: auto;
+}
+
+.input input {
+  padding-right: 24px;
+}
+
+.suffix {
+  position: absolute;
+  right: 8px;
+  cursor: pointer;
+}
+
+.item {
+  display: flex;
+  border: 1px solid;
+  margin: 16px;
+  padding: 8px;
+}
+
+.item .img {
+  width: 64px;
+  border: 1px solid;
+  margin-right: 16px;
+}
